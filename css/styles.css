@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: auto;
+  height: 100%;
+}
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  height: 100%;
+  background: hsl(226, 72%, 21%);
+}
+
+aside{
+  width: 25%;
+  float: left;
+  overflow: auto;
+  overflow: hidden;
+}
+
+aside h1{
+  font-size: 1.2em;
+  color: #d2d2d2;
+  text-align: center;
+  padding-top:200px;
+}
+
+aside p{
+  text-align: center;
+  padding-top: 2px;
+  color: #d2d2d2;
+  margin-bottom: 20px;
+} 
+
+nav{  
+  background-color: hsl(226, 72%, 21%);
+  display: flex;
+  flex-direction: column;
+  line-height: 2em;
+}
+
+nav a{
+  color: #d2d2d2;;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #d2d2d2;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.main-container {
+  padding: 2em 3em;
+}
+
+.main-container aside, .main-container main{
+  display: flex;
+  flex-direction: column;
+  color: #d2d2d2;
+  height: 90vh;
+}
+
+main{
+  width:  75%;
+  float: right;
+  overflow:scroll;
+  overflow: hidden;
+}
+
+.main article h1, main article p, main article h4{
+  height: 100vh;
+}
+
+main article h1{
+  font-size: 2em;
+  color: #d2d2d2;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+main article p{
+  text-align: left;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+main article h2{
+  margin-left: 5px;
+}
+
+main article h4{
+  text-align: center;
+  margin-left: 5px;
+}
+
+.slideshow{
+  margin-top: -96vh;
+  width: 90% ;
+  height: 90% ; 
+  margin-left: 55px;
+}
+
+.cycle-slideshow img{
+  width: 100%;
+  height: 100%;
+}
+
+.center{
+text-align: center;
+ }
+
+footer{
+  display: flex;
+  justify-content: left;
+  color: #d2d2d2;
+  background: #003556;
+  padding: 7px;
+  box-shadow: 0 50vh 0 50vh #000;
+}
+
+footer h4{
+  text-align: center;
+  padding-top: 3px;
+}
+
+footer img{
+  margin: 2px 5px
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) { 
+  nav a{
+    color: #d2d2d2;;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 10px;
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+}
+ 
+@media screen and (min-width: 768px) and (max-width: 991px){
+  nav a{
+    color: #d2d2d2;;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    nav a{
+    color: #d2d2d2;;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 5 px;
+    }
+  }
